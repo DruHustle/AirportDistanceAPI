@@ -127,7 +127,7 @@ namespace AirportDistanceAPI.Controllers
                 else
                 {
                     err.ErrorNumber = 1;
-                    err.ErrorDescription = "Please ensure that you supply valid values for parameters 'iata1' and 'iata2', e.g. ?iata1=JNB&iata2=NYC";
+                    err.ErrorDescription = "Please ensure that you supply valid values for parameters 'iata1' and 'iata2', e.g. ~/api/distance?iata1=JNB&iata2=NYC";
                     {
                         string json = JsonConvert.SerializeObject(err, Formatting.None);
                         return new string[] { json };
